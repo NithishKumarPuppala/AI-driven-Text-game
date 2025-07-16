@@ -1,33 +1,41 @@
-# AI Text-Based Adventure Game
+AI Text-Based Adventure Game
+This is an AI-driven text-based adventure game where the player interacts with an AI to progress through a dynamically generated story. The game uses the Cohere API to create unique scenarios and responses, ensuring no two playthroughs are the same.
 
-This is an AI-driven text-based adventure game where the player interacts with an AI to progress through an adventure.
-
-##  Installation & Setup
-
+Installation & Setup
 1️⃣ Clone the repository:
 
 git clone https://github.com/NithishKumarPuppala/AI-driven-Text-game.git
-
+cd AI-driven-Text-game
 
 2️⃣ Install dependencies:
+Create a requirements.txt file with the following content:
 
+cohere
+python-dotenv
+
+Then, install the required packages using pip:
+
+pip install -r requirements.txt
 
 3️⃣ Set up the API key:
-- Create a `.env` file in the project directory.
-- Add your API key:
-  ```
-  GOOGLE_API_KEY=your-api-key-here
-  ```
-- (Replace `your-api-key-here` with your actual Google API key)
+
+Create a file named .env in the project's root directory.
+
+Add your Cohere API key to the .env file like this:
+
+COHERE_API_KEY="your-cohere-api-key-here"
+
+(Replace your-cohere-api-key-here with your actual Cohere API key).
 
 4️⃣ Run the game:
+
 python game.py
 
+Type 'quit' anytime to exit the game.
 
-Type `'quit'` anytime to exit the game.
+Notes
+Requires Python 3.x.
 
-##  Notes
+Uses the Cohere API for generating all game content.
 
-- Requires **Python 3.x**.
-- Uses **Google Generative AI API** for generating game content.
-- The `.env` file is **ignored** in GitHub for security reasons.
+The .env file is included in .gitignore to keep your API key secure and private.
