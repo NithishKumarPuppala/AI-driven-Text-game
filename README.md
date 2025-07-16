@@ -6,7 +6,7 @@ This is an AI-driven text-based adventure game where the player interacts with a
 
 1️⃣ Clone the repository:
 
-git clone https://github.com/yourusername/ai-text-adventure.git cd ai-text-adventure
+git clone https://github.com/NithishKumarPuppala/AI-driven-Text-game.git
 
 
 2️⃣ Install dependencies:
